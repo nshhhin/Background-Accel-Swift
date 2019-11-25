@@ -31,7 +31,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
           // 第一引数: Info.plistで定義したIdentifierを指定
           // 第二引数: タスクを実行するキューを指定。nilの場合は、デフォルトのバックグラウンドキューが利用されます。
           // 第三引数: 実行する処理
-          BGTaskScheduler.shared.register(forTaskWithIdentifier: "Nakamura-labProject.Background-Accel-Swift.refresh", using: nil) { task in
+          BGTaskScheduler.shared.register(forTaskWithIdentifier: "Nakamura-labProject.Background-Accel-Swift.process", using: nil) { task in
               // バックグラウンド処理したい内容 ※後述します
               self.handleAppProcessing(task: task as! BGProcessingTask)
           }
